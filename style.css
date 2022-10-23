@@ -7,17 +7,24 @@
 :root {
     --orange: #F2C14E;
     --winning-blocks: #2d414b;
+    --font-color: #cbd7e0;
 }
 
 body {
     color: var(--orange);
     font-family: 'Finger Paint', cursive;
 }
+
+
+
+/* HEADER */
+
 h1 {
     font-size: 54px;
     text-transform: uppercase;
 }
 
+/* MAIN */
 .container {
     padding: 40px;
     height: 100vh;
@@ -65,3 +72,28 @@ button:hover {
     cursor: pointer;
     transform: translateY(-2px);
 }
+
+/* FOOTER */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+  }
+  
+  .fa-github {
+    color: var(--font-color);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
